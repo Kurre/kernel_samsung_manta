@@ -22,6 +22,14 @@ make slim_manta_defconfig
 exit
 fi
 
+# Launches menuconfig
+if [ "$1" = "menuconfig" ] ; then
+echo 'Launching menuconfig'
+make menuconfig
+exit
+fi
+
+
 # Exports kernel local version? Not sure yet.
 #echo 'Exporting kernel version'
 #export LOCALVERSION='SlimTest_1.0'
